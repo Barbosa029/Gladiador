@@ -7,7 +7,9 @@ import ProductCards from './components/ProductCards';
 import Guarantee from './components/Guarantee';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import Comentario from './components/Comentarios'; // Assuming you have a Download icon component
+import Comentario from './components/Comentarios';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+// Assuming you have a Download icon component
 
 
 function AnimatedSection({ children }: { children: React.ReactNode }) {
@@ -47,6 +49,7 @@ function App() {
       <AnimatedSection>
         <Footer />
       </AnimatedSection>
+      <SpeedInsights />
     </div>
   );
 }
